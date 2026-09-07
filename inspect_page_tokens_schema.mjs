@@ -1,0 +1,2 @@
+const base=process.env.SUPABASE_URL?.replace(/\/$/,'');const key=process.env.SUPABASE_SERVICE_ROLE_KEY;if(!base||!key)throw new Error('missing server Supabase config');
+const r=await fetch(`${base}/rest/v1/page_tokens_vault?select=*&limit=1`,{headers:{apikey:key,Authorization:`Bearer ${key}`}});const t=await r.text();let j;try{j=JSON.parse(t)}catch{j=null};const row=Array.isArray(j)&&j[0]?j[0]:{};console.log(JSON.stringify({status:r.status,columns:Object.keys(row).sort(),error:r.ok?null:t.slice(0,300)}));

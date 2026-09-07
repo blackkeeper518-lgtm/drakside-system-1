@@ -1,0 +1,493 @@
+[2026-09-03T19:31:06.008Z] Starting dev server with command: pnpm run dev
+[2026-09-03T19:31:08.647Z] > thai-order-project-vault@1.0.0 dev /home/ubuntu/thai-order-project-vault
+[2026-09-03T19:31:08.647Z] > NODE_ENV=development tsx watch server/_core/index.ts
+[2026-09-03T19:31:10.560Z] [OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T19:31:10.846Z] Server running on http://localhost:3000/
+[2026-09-03T19:32:44.883Z] 7:32:44 PM [tsx] change in ./drizzle/schema.ts Restarting...
+[2026-09-03T19:32:46.605Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T19:32:46.888Z] Server running on http://localhost:3000/
+[2026-09-03T19:32:48.892Z] 7:32:48 PM [tsx] change in ./server/db.ts Restarting...
+[2026-09-03T19:32:50.602Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T19:32:50.858Z] Server running on http://localhost:3000/
+[2026-09-03T19:32:52.437Z] 7:32:52 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T19:32:54.086Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T19:32:54.345Z] Server running on http://localhost:3000/
+[2026-09-03T19:33:00.477Z] 7:33:00 PM [vite] (client) page reload index.html
+[2026-09-03T19:33:26.007Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T19:33:28.949Z] 7:33:28 PM [vite] (client) ✨ new dependencies optimized: @radix-ui/react-dropdown-menu, @radix-ui/react-avatar, @radix-ui/react-separator, @radix-ui/react-dialog
+[2026-09-03T19:33:28.949Z] 7:33:28 PM [vite] (client) ✨ optimized dependencies changed. reloading
+[2026-09-03T19:33:30.077Z] [Auth] Missing session cookie
+[2026-09-03T19:34:31.461Z] 7:34:31 PM [vite] (client) hmr update /src/components/DashboardLayout.tsx, /src/index.css
+[2026-09-03T19:34:40.245Z] 7:34:40 PM [vite] (client) hmr update /src/components/DashboardLayout.tsx, /src/index.css
+[2026-09-03T19:41:30.915Z] [Auth] Missing session cookie
+[2026-09-03T20:00:01.466Z] ELIFECYCLE  Command failed.
+[2026-09-03T20:00:01.536Z] Dev server exited with code -1
+[2026-09-03T20:00:02.577Z] Starting dev server with command: pnpm run dev
+[2026-09-03T20:00:03.385Z] > thai-order-project-vault@1.0.0 dev /home/ubuntu/thai-order-project-vault
+[2026-09-03T20:00:03.385Z] > NODE_ENV=development tsx watch server/_core/index.ts
+[2026-09-03T20:00:05.084Z] [OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:00:05.338Z] Server running on http://localhost:3000/
+[2026-09-03T20:00:08.843Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:00:48.446Z] ELIFECYCLE  Command failed.
+[2026-09-03T20:00:48.490Z] Dev server exited with code -1
+[2026-09-03T20:00:49.569Z] Starting dev server with command: pnpm run dev
+[2026-09-03T20:00:50.611Z] > thai-order-project-vault@1.0.0 dev /home/ubuntu/thai-order-project-vault
+[2026-09-03T20:00:50.612Z] > NODE_ENV=development tsx watch server/_core/index.ts
+[2026-09-03T20:00:52.621Z] [OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:00:52.878Z] Server running on http://localhost:3000/
+[2026-09-03T20:00:53.737Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:01:35.829Z] ELIFECYCLE  Command failed.
+[2026-09-03T20:01:35.896Z] Dev server exited with code -1
+[2026-09-03T20:01:36.951Z] Starting dev server with command: pnpm run dev
+[2026-09-03T20:01:37.734Z] > thai-order-project-vault@1.0.0 dev /home/ubuntu/thai-order-project-vault
+[2026-09-03T20:01:37.734Z] > NODE_ENV=development tsx watch server/_core/index.ts
+[2026-09-03T20:01:39.399Z] [OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:01:39.653Z] Server running on http://localhost:3000/
+[2026-09-03T20:01:41.023Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:02:06.170Z] 8:02:06 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T20:02:07.892Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:02:08.146Z] Server running on http://localhost:3000/
+[2026-09-03T20:02:09.044Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:02:59.266Z] 8:02:59 PM [vite] (client) hmr update /src/components/DashboardLayout.tsx, /src/index.css
+[2026-09-03T20:03:06.737Z] 8:03:06 PM [vite] (client) hmr update /src/App.tsx, /src/index.css
+[2026-09-03T20:03:55.609Z] ELIFECYCLE  Command failed.
+[2026-09-03T20:03:55.660Z] Dev server exited with code -1
+[2026-09-03T20:03:56.732Z] Starting dev server with command: pnpm run dev
+[2026-09-03T20:03:57.672Z] > thai-order-project-vault@1.0.0 dev /home/ubuntu/thai-order-project-vault
+[2026-09-03T20:03:57.672Z] > NODE_ENV=development tsx watch server/_core/index.ts
+[2026-09-03T20:03:59.582Z] [OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:03:59.860Z] Server running on http://localhost:3000/
+[2026-09-03T20:04:05.154Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:05:22.520Z] 8:05:22 PM [vite] (client) hmr update /src/pages/OrderControl.tsx, /src/index.css
+[2026-09-03T20:06:24.859Z] 8:06:24 PM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+[2026-09-03T20:06:54.273Z] 8:06:54 PM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+[2026-09-03T20:18:16.612Z] 8:18:16 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T20:18:18.233Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:18:18.500Z] Server running on http://localhost:3000/
+[2026-09-03T20:18:19.484Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:19:18.145Z] 8:19:18 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T20:19:19.891Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:19:20.138Z] Server running on http://localhost:3000/
+[2026-09-03T20:19:21.130Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:19:27.532Z] 8:19:27 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T20:19:29.152Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:19:29.400Z] Server running on http://localhost:3000/
+[2026-09-03T20:19:30.659Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:19:44.505Z] 8:19:44 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T20:19:46.197Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:19:46.436Z] Server running on http://localhost:3000/
+[2026-09-03T20:19:47.392Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:19:52.862Z] 8:19:52 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T20:19:54.460Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:19:54.697Z] Server running on http://localhost:3000/
+[2026-09-03T20:19:55.916Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:20:32.621Z] 8:20:32 PM [vite] (client) hmr update /src/components/DashboardLayout.tsx, /src/index.css
+[2026-09-03T20:20:39.528Z] 8:20:39 PM [vite] (client) hmr update /src/App.tsx, /src/index.css
+[2026-09-03T20:22:48.123Z] 8:22:48 PM [vite] (client) hmr update /src/components/DashboardLayout.tsx, /src/index.css
+[2026-09-03T20:23:05.498Z] 8:23:05 PM [vite] (client) hmr update /src/pages/OrderControl.tsx, /src/index.css
+[2026-09-03T20:23:05.500Z] 8:23:05 PM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+[2026-09-03T20:23:19.513Z] 8:23:19 PM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+[2026-09-03T20:24:25.537Z] 8:24:25 PM [vite] (client) hmr update /src/components/DashboardLayout.tsx, /src/index.css
+[2026-09-03T20:25:14.658Z] 8:25:14 PM [vite] (client) hmr update /src/pages/OrderControl.tsx, /src/index.css
+[2026-09-03T20:41:46.808Z] 8:41:46 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T20:41:48.493Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T20:41:48.740Z] Server running on http://localhost:3000/
+[2026-09-03T20:41:50.060Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T20:42:04.864Z] 8:42:04 PM [vite] (client) hmr update /src/pages/OrderControl.tsx, /src/index.css
+[2026-09-03T20:42:14.358Z] 8:42:14 PM [vite] (client) hmr update /src/pages/OrderControl.tsx, /src/index.css
+[2026-09-03T21:04:32.744Z] ELIFECYCLE  Command failed.
+[2026-09-03T21:04:32.796Z] Dev server exited with code -1
+[2026-09-03T21:04:33.879Z] Starting dev server with command: pnpm run dev
+[2026-09-03T21:04:34.708Z] > thai-order-project-vault@1.0.0 dev /home/ubuntu/thai-order-project-vault
+[2026-09-03T21:04:34.708Z] > NODE_ENV=development tsx watch server/_core/index.ts
+[2026-09-03T21:04:36.374Z] [OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:04:36.618Z] Server running on http://localhost:3000/
+[2026-09-03T21:04:54.502Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:04:58.504Z] 9:04:58 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T21:05:00.137Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:05:00.368Z] Server running on http://localhost:3000/
+[2026-09-03T21:05:03.649Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:05:37.447Z] 9:05:37 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T21:05:39.072Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:05:39.301Z] Server running on http://localhost:3000/
+[2026-09-03T21:05:40.487Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:05:54.169Z] 9:05:54 PM [vite] (client) hmr update /src/pages/Home.tsx, /src/index.css
+[2026-09-03T21:07:38.672Z] 9:07:38 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-03T21:07:59.495Z] 9:07:59 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-03T21:08:11.488Z] 9:08:11 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T21:08:12.982Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:08:13.212Z] Server running on http://localhost:3000/
+[2026-09-03T21:08:14.053Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:42:15.896Z] 9:42:15 PM [tsx] change in ./drizzle/schema.ts Restarting...
+[2026-09-03T21:42:17.495Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:42:17.734Z] Server running on http://localhost:3000/
+[2026-09-03T21:42:18.845Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:43:27.210Z] 9:43:27 PM [tsx] change in ./server/db.ts Restarting...
+[2026-09-03T21:43:29.139Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:43:29.397Z] Server running on http://localhost:3000/
+[2026-09-03T21:43:30.724Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:43:41.497Z] 9:43:41 PM [tsx] change in ./server/_core/index.ts Restarting...
+[2026-09-03T21:43:43.196Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:43:43.438Z] Server running on http://localhost:3000/
+[2026-09-03T21:43:43.909Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:43:51.704Z] 9:43:51 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T21:43:53.328Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:43:53.570Z] Server running on http://localhost:3000/
+[2026-09-03T21:43:54.377Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:44:03.022Z] 9:44:03 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:44:04.523Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:44:04.759Z] Server running on http://localhost:3000/
+[2026-09-03T21:44:05.407Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:44:47.451Z] 9:44:47 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-03T21:45:23.421Z] 9:45:23 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-03T21:46:18.176Z] 9:46:18 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-03T21:46:29.172Z] 9:46:29 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-03T21:46:31.011Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:46:31.293Z] Server running on http://localhost:3000/
+[2026-09-03T21:46:32.261Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:47:54.215Z] 9:47:54 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:47:55.927Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:47:56.199Z] Server running on http://localhost:3000/
+[2026-09-03T21:47:57.099Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:48:22.120Z] 9:48:22 PM [tsx] change in ./server/db.ts Restarting...
+[2026-09-03T21:48:23.681Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:48:23.919Z] Server running on http://localhost:3000/
+[2026-09-03T21:48:24.965Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:48:34.952Z] 9:48:34 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:48:36.929Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:48:37.181Z] Server running on http://localhost:3000/
+[2026-09-03T21:48:38.697Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:49:22.215Z] 9:49:22 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-03T21:51:56.141Z] 9:51:56 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:51:57.924Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:51:58.169Z] Server running on http://localhost:3000/
+[2026-09-03T21:51:59.101Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:52:25.271Z] 9:52:25 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:52:26.907Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:52:27.155Z] Server running on http://localhost:3000/
+[2026-09-03T21:52:27.646Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:52:31.307Z] 9:52:31 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:52:32.960Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:52:33.214Z] Server running on http://localhost:3000/
+[2026-09-03T21:52:34.419Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:52:38.310Z] 9:52:38 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:52:39.987Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:52:40.238Z] Server running on http://localhost:3000/
+[2026-09-03T21:52:41.522Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:52:44.493Z] 9:52:44 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:52:46.108Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:52:46.345Z] Server running on http://localhost:3000/
+[2026-09-03T21:52:47.784Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:52:59.104Z] 9:52:59 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-03T21:53:38.545Z] 9:53:38 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:53:40.178Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:53:40.406Z] Server running on http://localhost:3000/
+[2026-09-03T21:53:40.844Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:54:31.345Z] 9:54:31 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:54:32.982Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:54:33.202Z] Server running on http://localhost:3000/
+[2026-09-03T21:54:33.604Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:54:37.355Z] 9:54:37 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:54:38.918Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:54:39.148Z] Server running on http://localhost:3000/
+[2026-09-03T21:54:39.927Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-03T21:54:45.282Z] 9:54:45 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-03T21:54:47.178Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-03T21:54:47.442Z] Server running on http://localhost:3000/
+[2026-09-03T21:54:47.767Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:29:28.237Z] 8:29:28 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T08:30:20.864Z] 8:30:20 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T08:37:34.988Z] 8:37:34 AM [tsx] change in ./server/order-summary.ts Restarting...
+[2026-09-04T08:37:36.695Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:37:36.940Z] Server running on http://localhost:3000/
+[2026-09-04T08:37:38.113Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:38:07.749Z] 8:38:07 AM [tsx] change in ./server/order-summary.ts Restarting...
+[2026-09-04T08:38:09.354Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:38:09.604Z] Server running on http://localhost:3000/
+[2026-09-04T08:38:10.648Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:38:31.298Z] 8:38:31 AM [tsx] change in ./server/order-summary.ts Restarting...
+[2026-09-04T08:38:33.005Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:38:33.264Z] Server running on http://localhost:3000/
+[2026-09-04T08:38:34.422Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:43:05.134Z] 8:43:05 AM [tsx] change in ./server/order-summary.ts Restarting...
+[2026-09-04T08:43:06.871Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:43:07.114Z] Server running on http://localhost:3000/
+[2026-09-04T08:43:08.078Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:52:05.510Z] 8:52:05 AM [tsx] change in ./drizzle/schema.ts Restarting...
+[2026-09-04T08:52:07.307Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:52:07.574Z] Server running on http://localhost:3000/
+[2026-09-04T08:52:08.362Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:52:19.271Z] 8:52:19 AM [tsx] change in ./server/db.ts Restarting...
+[2026-09-04T08:52:21.104Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:52:21.360Z] Server running on http://localhost:3000/
+[2026-09-04T08:52:22.116Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:52:46.382Z] 8:52:46 AM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T08:52:48.215Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:52:48.449Z] Server running on http://localhost:3000/
+[2026-09-04T08:52:49.252Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:53:01.860Z] 8:53:01 AM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T08:53:03.521Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:53:03.771Z] Server running on http://localhost:3000/
+[2026-09-04T08:53:04.780Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:54:15.162Z] 8:54:15 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T08:54:17.069Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:54:17.322Z] Server running on http://localhost:3000/
+[2026-09-04T08:54:18.011Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:54:33.402Z] 8:54:33 AM [tsx] change in ./server/order-summary.ts Restarting...
+[2026-09-04T08:54:35.240Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:54:35.495Z] Server running on http://localhost:3000/
+[2026-09-04T08:54:36.246Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:54:45.633Z] 8:54:45 AM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T08:54:47.290Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:54:47.536Z] Server running on http://localhost:3000/
+[2026-09-04T08:54:48.512Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:54:58.885Z] 8:54:58 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T08:55:27.367Z] 8:55:27 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T08:55:53.087Z] 8:55:53 AM [vite] (client) hmr update /src/components/DashboardLayout.tsx, /src/index.css
+[2026-09-04T08:56:03.203Z] 8:56:03 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+[2026-09-04T08:58:19.946Z] 8:58:19 AM [tsx] change in ./server/order-summary.ts Restarting...
+[2026-09-04T08:58:21.592Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:58:21.832Z] Server running on http://localhost:3000/
+[2026-09-04T08:58:22.341Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:58:42.905Z] 8:58:42 AM [tsx] change in ./server/order-summary.ts Restarting...
+[2026-09-04T08:58:44.781Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:58:45.064Z] Server running on http://localhost:3000/
+[2026-09-04T08:58:46.032Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T08:59:08.786Z] ELIFECYCLE  Command failed.
+[2026-09-04T08:59:08.852Z] Dev server exited with code -1
+[2026-09-04T08:59:09.909Z] Starting dev server with command: pnpm run dev
+[2026-09-04T08:59:10.787Z] > thai-order-project-vault@1.0.0 dev /home/ubuntu/thai-order-project-vault
+[2026-09-04T08:59:10.787Z] > NODE_ENV=development tsx watch server/_core/index.ts
+[2026-09-04T08:59:12.847Z] [OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T08:59:13.113Z] Server running on http://localhost:3000/
+[2026-09-04T09:00:04.321Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:00:44.457Z] 9:00:44 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:00:46.278Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:00:46.551Z] Server running on http://localhost:3000/
+[2026-09-04T09:01:34.974Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:09:17.056Z] 9:09:17 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:09:18.962Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:09:19.213Z] Server running on http://localhost:3000/
+[2026-09-04T09:09:19.928Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:09:47.541Z] 9:09:47 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:09:49.421Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:09:49.672Z] Server running on http://localhost:3000/
+[2026-09-04T09:09:50.846Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:09:58.313Z] 9:09:58 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:09:59.997Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:10:00.243Z] Server running on http://localhost:3000/
+[2026-09-04T09:10:01.032Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:10:04.395Z] 9:10:04 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:10:06.057Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:10:06.300Z] Server running on http://localhost:3000/
+[2026-09-04T09:10:07.380Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:10:12.328Z] 9:10:12 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:10:14.097Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:10:14.339Z] Server running on http://localhost:3000/
+[2026-09-04T09:10:15.548Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:15:02.130Z] 9:15:02 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:15:03.963Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:15:04.219Z] Server running on http://localhost:3000/
+[2026-09-04T09:15:17.147Z] 9:15:17 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:15:19.125Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:15:19.390Z] Server running on http://localhost:3000/
+[2026-09-04T09:15:27.017Z] 9:15:27 AM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T09:15:28.665Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:15:28.917Z] Server running on http://localhost:3000/
+[2026-09-04T09:15:29.453Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:15:41.565Z] 9:15:41 AM [vite] (client) hmr update /src/pages/ProductAliases.tsx, /src/index.css
+[2026-09-04T09:16:08.974Z] 9:16:08 AM [vite] (client) hmr update /src/pages/ProductAliases.tsx, /src/index.css
+[2026-09-04T09:20:36.506Z] 9:20:36 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:20:38.340Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:20:38.606Z] Server running on http://localhost:3000/
+[2026-09-04T09:20:39.400Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:20:51.045Z] 9:20:51 AM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T09:20:52.781Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:20:53.031Z] Server running on http://localhost:3000/
+[2026-09-04T09:20:53.893Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:21:02.081Z] 9:21:02 AM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T09:21:03.832Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:21:04.076Z] Server running on http://localhost:3000/
+[2026-09-04T09:21:04.890Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:22:11.188Z] 9:22:11 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T09:22:54.227Z] 9:22:54 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T09:27:21.361Z] 9:27:21 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T09:27:38.002Z] 9:27:38 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T09:28:13.591Z] 9:28:13 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T09:28:46.065Z] 9:28:46 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T09:32:34.007Z] 9:32:34 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:32:35.938Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:32:36.192Z] Server running on http://localhost:3000/
+[2026-09-04T09:32:37.290Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:32:42.326Z] 9:32:42 AM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T09:32:44.064Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T09:32:44.312Z] Server running on http://localhost:3000/
+[2026-09-04T09:32:45.299Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T09:32:51.940Z] 9:32:51 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T09:33:01.238Z] 9:33:01 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T09:33:22.244Z] 9:33:22 AM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T13:08:52.392Z] 1:08:52 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T13:08:54.225Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T13:08:54.512Z] Server running on http://localhost:3000/
+[2026-09-04T13:08:55.325Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T13:09:06.933Z] 1:09:06 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T13:09:08.900Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T13:09:09.178Z] Server running on http://localhost:3000/
+[2026-09-04T13:09:09.775Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T13:09:18.090Z] 1:09:18 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T13:09:19.766Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T13:09:20.008Z] Server running on http://localhost:3000/
+[2026-09-04T13:09:21.313Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T13:09:26.255Z] 1:09:26 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T13:09:27.911Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T13:09:28.165Z] Server running on http://localhost:3000/
+[2026-09-04T13:09:29.358Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T13:09:32.977Z] 1:09:32 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T13:09:34.782Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T13:09:35.043Z] Server running on http://localhost:3000/
+[2026-09-04T13:09:36.324Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T13:09:43.635Z] 1:09:43 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T13:09:45.280Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T13:09:45.540Z] Server running on http://localhost:3000/
+[2026-09-04T13:09:46.503Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T13:09:53.031Z] 1:09:53 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T13:09:54.802Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T13:09:55.068Z] Server running on http://localhost:3000/
+[2026-09-04T13:09:57.469Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T13:21:29.415Z] 1:21:29 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T13:21:31.201Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T13:21:31.470Z] Server running on http://localhost:3000/
+[2026-09-04T13:21:32.982Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T14:07:48.608Z] 2:07:48 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T14:07:50.633Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T14:07:50.974Z] Server running on http://localhost:3000/
+[2026-09-04T14:07:51.766Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T14:08:00.661Z] 2:08:00 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T14:08:02.490Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T14:08:02.744Z] Server running on http://localhost:3000/
+[2026-09-04T14:08:03.996Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T14:08:14.527Z] 2:08:14 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T14:08:41.608Z] 2:08:41 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T14:09:18.436Z] 2:09:18 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T14:11:55.427Z] 2:11:55 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T14:14:46.015Z] 2:14:46 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T16:15:40.089Z] 4:15:40 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:15:41.849Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:15:42.099Z] Server running on http://localhost:3000/
+[2026-09-04T16:15:51.488Z] 4:15:51 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:15:53.361Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:15:53.626Z] Server running on http://localhost:3000/
+[2026-09-04T16:16:11.311Z] 4:16:11 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:16:13.294Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:16:13.584Z] Server running on http://localhost:3000/
+[2026-09-04T16:16:30.468Z] 4:16:30 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:16:32.398Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:16:32.646Z] Server running on http://localhost:3000/
+[2026-09-04T16:17:14.472Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:20:53.937Z] 4:20:53 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:20:55.632Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:20:55.872Z] Server running on http://localhost:3000/
+[2026-09-04T16:21:05.946Z] 4:21:05 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T16:21:07.793Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:21:08.100Z] Server running on http://localhost:3000/
+[2026-09-04T16:23:36.144Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:25:31.547Z] 4:25:31 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:25:33.257Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:25:33.523Z] Server running on http://localhost:3000/
+[2026-09-04T16:25:34.038Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:25:47.814Z] 4:25:47 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:25:49.533Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:25:49.789Z] Server running on http://localhost:3000/
+[2026-09-04T16:25:51.038Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:26:18.327Z] ELIFECYCLE  Command failed.
+[2026-09-04T16:26:18.421Z] Dev server exited with code -1
+[2026-09-04T16:26:19.451Z] Starting dev server with command: pnpm run dev
+[2026-09-04T16:26:20.323Z] > thai-order-project-vault@1.0.0 dev /home/ubuntu/thai-order-project-vault
+[2026-09-04T16:26:20.323Z] > NODE_ENV=development tsx watch server/_core/index.ts
+[2026-09-04T16:26:22.185Z] [OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:26:22.458Z] Server running on http://localhost:3000/
+[2026-09-04T16:26:23.472Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:27:15.685Z] 4:27:15 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:27:17.480Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:27:17.733Z] Server running on http://localhost:3000/
+[2026-09-04T16:27:29.737Z] 4:27:29 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:27:31.460Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:27:31.723Z] Server running on http://localhost:3000/
+[2026-09-04T16:27:38.456Z] 4:27:38 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:27:40.272Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:27:40.530Z] Server running on http://localhost:3000/
+[2026-09-04T16:27:45.987Z] 4:27:45 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:27:47.962Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:27:48.244Z] Server running on http://localhost:3000/
+[2026-09-04T16:30:28.839Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:35:28.630Z] 4:35:28 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T16:35:58.034Z] 4:35:58 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T16:36:27.272Z] 4:36:27 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T16:38:49.386Z] 4:38:49 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T16:38:51.261Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:38:51.538Z] Server running on http://localhost:3000/
+[2026-09-04T16:38:52.324Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:39:03.269Z] 4:39:03 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T16:43:24.757Z] 4:43:24 PM [tsx] change in ./server/meta.ts Restarting...
+[2026-09-04T16:43:26.509Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:43:26.760Z] Server running on http://localhost:3000/
+[2026-09-04T16:43:35.185Z] 4:43:35 PM [tsx] change in ./server/meta.ts Restarting...
+[2026-09-04T16:43:37.000Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:43:37.269Z] Server running on http://localhost:3000/
+[2026-09-04T16:44:29.270Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:48:45.490Z] 4:48:45 PM [tsx] change in ./server/meta.ts Restarting...
+[2026-09-04T16:48:47.353Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:48:47.633Z] Server running on http://localhost:3000/
+[2026-09-04T16:48:48.361Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:49:02.564Z] 4:49:02 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T16:49:04.292Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:49:04.548Z] Server running on http://localhost:3000/
+[2026-09-04T16:49:05.395Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T16:49:50.197Z] 4:49:50 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T16:53:18.104Z] 4:53:18 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T16:53:19.937Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T16:53:20.180Z] Server running on http://localhost:3000/
+[2026-09-04T16:53:20.957Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T17:23:56.276Z] 5:23:56 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T17:24:06.018Z] 5:24:06 PM [vite] (client) hmr update /src/pages/ChatHub.tsx, /src/index.css
+[2026-09-04T17:24:13.543Z] 5:24:13 PM [tsx] change in ./server/order-summary.ts Restarting...
+[2026-09-04T17:24:15.197Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:24:15.448Z] Server running on http://localhost:3000/
+[2026-09-04T17:24:27.453Z] 5:24:27 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T17:24:29.315Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:24:29.622Z] Server running on http://localhost:3000/
+[2026-09-04T17:25:54.998Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T17:28:01.521Z] [NIGHTOPS] order-summary data lookup 1263ms (aliases 219ms)
+[2026-09-04T17:28:01.767Z] [NIGHTOPS] order-summary total 1729ms (pre-audit 1496ms, parse 13ms, audit 234ms)
+[2026-09-04T17:42:56.178Z] 5:42:56 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T17:42:57.935Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:42:58.197Z] Server running on http://localhost:3000/
+[2026-09-04T17:43:01.665Z] 5:43:01 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T17:43:03.581Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:43:03.825Z] Server running on http://localhost:3000/
+[2026-09-04T17:43:09.026Z] 5:43:09 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T17:43:10.733Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:43:10.996Z] Server running on http://localhost:3000/
+[2026-09-04T17:43:19.376Z] 5:43:19 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T17:43:21.259Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:43:21.550Z] Server running on http://localhost:3000/
+[2026-09-04T17:43:38.296Z] 5:43:38 PM [tsx] change in ./server/db.ts Restarting...
+[2026-09-04T17:43:39.870Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:43:40.144Z] Server running on http://localhost:3000/
+[2026-09-04T17:43:49.571Z] 5:43:49 PM [tsx] change in ./server/db.ts Restarting...
+[2026-09-04T17:43:51.224Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:43:51.480Z] Server running on http://localhost:3000/
+[2026-09-04T17:44:01.704Z] 5:44:01 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T17:44:03.270Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:44:03.519Z] Server running on http://localhost:3000/
+[2026-09-04T17:44:13.267Z] 5:44:13 PM [tsx] change in ./server/routers.ts Restarting...
+[2026-09-04T17:44:14.847Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:44:15.089Z] Server running on http://localhost:3000/
+[2026-09-04T17:45:15.067Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T17:49:10.885Z] 5:49:10 PM [tsx] change in ./server/supabase.ts Restarting...
+[2026-09-04T17:49:12.643Z] c[OAuth] Initialized with baseURL: https://api.manus.im
+[2026-09-04T17:49:12.913Z] Server running on http://localhost:3000/
+[2026-09-04T17:54:40.254Z] [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[2026-09-04T17:54:43.454Z] 5:54:43 PM [vite] (client) ✨ new dependencies optimized: recharts
+[2026-09-04T17:54:43.454Z] 5:54:43 PM [vite] (client) ✨ optimized dependencies changed. reloading
+[2026-09-04T18:16:15.252Z] 6:16:15 PM [vite] (client) hmr update /src/components/DashboardLayout.tsx, /src/index.css

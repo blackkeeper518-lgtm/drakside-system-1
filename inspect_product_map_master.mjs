@@ -1,0 +1,2 @@
+const base=process.env.SUPABASE_URL?.replace(/\/$/,'');const key=process.env.SUPABASE_SERVICE_ROLE_KEY;if(!base||!key)throw new Error('missing Supabase config');
+const r=await fetch(`${base}/rest/v1/product_map_master?select=*&limit=1`,{headers:{apikey:key,Authorization:`Bearer ${key}`}});const t=await r.text();let j;try{j=JSON.parse(t)}catch{j=null};console.log(JSON.stringify({status:r.status,columns:Array.isArray(j)&&j[0]?Object.keys(j[0]).sort():[],error:r.ok?null:t.slice(0,500)},null,2));

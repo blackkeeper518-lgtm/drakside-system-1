@@ -1,0 +1,408 @@
+{
+  "name": "Thai Order Color Mapping → Supabase → Telegram",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "thai-order-color-mapping",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "webhook-order",
+      "name": "Make Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -1040,
+        260
+      ],
+      "webhookId": "thai-order-color-mapping"
+    },
+    {
+      "parameters": {
+        "url": "https://gibyloawclbmeqlsjmld.supabase.co/rest/v1/product_map_master?select=*",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{$env.SUPABASE_ANON_KEY}}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.SUPABASE_ANON_KEY}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "get-product-master",
+      "name": "HTTP GET product_map_master",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -800,
+        120
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://gibyloawclbmeqlsjmld.supabase.co/rest/v1/product_alias_dictionary?select=*",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{$env.SUPABASE_ANON_KEY}}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.SUPABASE_ANON_KEY}}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "get-alias-master",
+      "name": "HTTP GET product_alias_dictionary",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -800,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineByPosition",
+        "options": {}
+      },
+      "id": "merge-masters",
+      "name": "Merge Product + Alias Master",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        -520,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// n8n Code Node: Parser / Color-Fruit Resolver\n// Mode: Run Once for All Items\n// ไม่ใช้ COD เดาจำนวน และไม่สร้าง display_for_packer\n\nconst orders = $items('Make Webhook');\nconst productItems = $items('HTTP GET product_map_master');\nconst aliasItems = $items('HTTP GET product_alias_dictionary');\nconst productRows = productItems.flatMap(i => Array.isArray(i.json?.data) ? i.json.data : (Array.isArray(i.json) ? i.json : [i.json]));\nconst aliasRows = aliasItems.flatMap(i => Array.isArray(i.json?.data) ? i.json.data : (Array.isArray(i.json) ? i.json : [i.json]));\nconst products = productRows.filter(Boolean);\nconst aliases = aliasRows.filter(Boolean);\n\nconst rules = [\n  { group: 'GREEN_MENTHOL', words: ['เขียว', 'คาเขียว', 'คาเขีว', 'เขียวร้อยท่อ'], emoji: ['🟢', '🟩'], skus: ['CAVALLO_GREEN', 'MOND_GREEN', 'SIERRA_GREEN', 'SEVIOS_GREEN', 'VESS_GREEN', 'VESS_GREEN_SLIMS'] },\n  { group: 'RED', words: ['แดง', 'คาแดง'], emoji: ['🔴', '🟥'], skus: ['CAVALLO_RED', 'SEVIOS_RED', 'SIERRA_RED', 'ROYAL_RED', 'VESS_RED'] },\n  { group: 'WATERMELON', words: ['แตงโม', 'แตงโมแดง', 'watermelon'], emoji: ['🍉'], skus: ['OS_WATERMELON', 'CAVALLO_WATERMELON'] },\n  { group: 'PURPLE_GRAPE', words: ['ม่วง', 'คาม่วง', 'คา ม่วง', 'องุ่น'], emoji: ['🟣', '🟪', '🍇'], skus: ['CAVALLO_TWIN_X_BALL', 'MILANO_PURPLE', 'OS_BLUEBERRY'] },\n  { group: 'YELLOW_GOLD', words: ['ทอง', 'เหลือง', 'คาเหลือง'], emoji: ['🟡', '🟨'], skus: ['MOND_GOLD', 'VESS_GOLD'] },\n  { group: 'MANGO', words: ['มะม่วง', 'mango'], emoji: ['🥭'], skus: ['OS_MANGO', 'CAVALLO_MANGO', 'VESS_CRUSH_MINT.X.MANGO'] },\n  { group: 'BLUEBERRY', words: ['บลู', 'บูล', 'บูลเบอรื', 'บลูเบอร์รี่', 'blueberry'], emoji: ['🔵', '🟦', '🍇'], skus: ['OS_BLUEBERRY'] },\n  { group: 'BLACK', words: ['ดำ', 'คาดำ'], emoji: ['⚫', '⬛'], skus: ['VESS_GREEN_BLACK', 'PLATINUM_BLACK', 'JHON_BLACK'] }\n];\n\nconst norm = (v) => String(v ?? '').toLowerCase().normalize('NFC').replace(/[._()\\[\\]{}:：,，/\\-]/g, ' ').replace(/\\s+/g, ' ').trim();\nconst compact = (v) => norm(v).replace(/\\s/g, '');\nconst skuOf = (r) => String(r.sku ?? r.SKU ?? r.product_sku ?? '').trim();\nconst rowText = (r) => [r.alias_text, r.alias, r.alias_norm, r.alias_norm_clean, r.th_name, r.product_name, r.product_name_th].filter(Boolean).join(' ');\nconst allRows = [...products, ...aliases];\n\nfunction resolve(raw) {\n  const text = String(raw ?? '');\n  const n = compact(text);\n  const groups = rules.filter(r => r.words.some(w => norm(text).includes(norm(w))) || r.emoji.some(e => text.includes(e)));\n  const explicit = [...new Set(allRows.filter(r => {\n    const sku = skuOf(r);\n    const terms = [sku, rowText(r)].filter(Boolean);\n    return terms.some(t => compact(t) && n.includes(compact(t)));\n  }).map(skuOf).filter(Boolean))];\n  const groupCandidates = [...new Set(groups.flatMap(g => g.skus))].filter(sku => products.length === 0 || products.some(p => skuOf(p) === sku));\n  const candidates = explicit.length ? explicit : groupCandidates;\n  const status = candidates.length === 0 ? 'SKU_DISCOVERY_REQUIRED' : candidates.length === 1 ? 'MATCHED' : 'AMBIGUOUS';\n  const qtyMatch = text.match(/(?:^|\\s)(\\d+(?:\\.\\d+)?)\\s*(?:คอต|คอตตอน|กล่อง|ชิ้น)?\\s*$/iu);\n  const quantity = qtyMatch ? Number(qtyMatch[1]) : null;\n  return { text, groups, candidates, status, quantity };\n}\n\nreturn orders.map((item) => {\n  const original = { ...item.json };\n  const raw = original.sniper_x_text_clean ?? original.raw_message ?? original.raw ?? original.clean_text ?? original.alias ?? original.product_text ?? '';\n  const r = resolve(raw);\n  const preservedCod = original.cod_amount;\n  return {\n    json: {\n      ...original,\n      raw_order_for_discovery: raw,\n      sensory_group: r.groups.length === 1 ? r.groups[0].group : r.groups.map(g => g.group),\n      detected_color_keywords: r.groups.flatMap(g => g.words.filter(w => norm(raw).includes(norm(w)))),\n      detected_emoji: r.groups.flatMap(g => g.emoji.filter(e => raw.includes(e))),\n      candidate_skus: r.candidates,\n      candidate_count: r.candidates.length,\n      color_mapping_status: r.status,\n      mapping_status: r.status === 'MATCHED' ? 'MATCHED' : r.status === 'AMBIGUOUS' ? 'CHECK_PRODUCT' : 'SKU_DISCOVERY_REQUIRED',\n      quantity_from_product_text: r.quantity,\n      mapping_reason: r.status === 'MATCHED' ? 'EXPLICIT_OR_SINGLE_MASTER_CANDIDATE' : r.status === 'AMBIGUOUS' ? 'MULTIPLE_CANDIDATES_NEED_BRAND_OR_VARIANT' : 'KEEP_ORDER_FOR_DISCOVERY',\n      next_action: r.status === 'MATCHED' ? 'CHECK_COD' : 'ROUTE_TO_PRODUCT_REVIEW',\n      cod_amount: preservedCod\n    }\n  };\n});"
+      },
+      "id": "resolve-color-sku",
+      "name": "Parser + ดูดสี + Resolve SKU",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -260,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.mapping_status}}",
+                    "rightValue": "MATCHED",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "PASS"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.mapping_status}}",
+                    "rightValue": "CHECK_PRODUCT",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "CHECK_PRODUCT"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{$json.mapping_status}}",
+                    "rightValue": "SKU_DISCOVERY_REQUIRED",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "SKU_DISCOVERY_REQUIRED"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra",
+          "renameFallbackOutput": "CHECK_COD_OR_OTHER"
+        }
+      },
+      "id": "route-status",
+      "name": "Router PASS / CHECK_PRODUCT / DISCOVERY",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        20,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// เตรียม body สำหรับ RPC โดยรักษาค่าเดิมทุกฟิลด์\nreturn $input.all().map(item => ({ json: { order_payload: { ...item.json, release_allowed: item.json.mapping_status === 'MATCHED' && item.json.cod_check_status === 'PASS', cod_amount: item.json.cod_amount } } }));"
+      },
+      "id": "prepare-rpc",
+      "name": "Prepare Supabase RPC Payload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        300,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://gibyloawclbmeqlsjmld.supabase.co/rest/v1/rpc/YOUR_RPC_NAME",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "={{$env.SUPABASE_ANON_KEY}}"
+            },
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.SUPABASE_ANON_KEY}}"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{JSON.stringify($json)}}",
+        "options": {}
+      },
+      "id": "post-supabase-rpc",
+      "name": "HTTP POST Supabase RPC",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        560,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// ข้อความส่งห้องงาน: ใช้ Display เดิมถ้ามี ห้ามสร้าง Display ใหม่\nreturn $input.all().map(item => {\n  const j = item.json;\n  const status = j.mapping_status ?? j.color_mapping_status ?? 'CHECK_PRODUCT';\n  const display = j.telegram_final_mapped ?? j.display_for_packer ?? null;\n  const message = display ? display : `🔎 ${status}\\n${j.raw_order_for_discovery ?? j.alias ?? j.raw ?? ''}\\nCandidate: ${(j.candidate_skus ?? []).join(', ') || 'ยังไม่พบ SKU'}`;\n  return { json: { ...j, telegram_text: message, telegram_route_status: status } };\n});"
+      },
+      "id": "format-telegram",
+      "name": "Format Telegram (ไม่สร้าง Display ใหม่)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        820,
+        260
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{$env.TELEGRAM_CHAT_ID}}",
+        "text": "={{$json.telegram_text}}",
+        "additionalFields": {}
+      },
+      "id": "telegram-send",
+      "name": "Telegram Bot / ห้องงาน",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [
+        1080,
+        260
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "SET_TELEGRAM_CREDENTIAL",
+          "name": "Telegram Bot Credential (เลือกหลัง Import)"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Make Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP GET product_map_master",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "HTTP GET product_alias_dictionary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP GET product_map_master": {
+      "main": [
+        [
+          {
+            "node": "Merge Product + Alias Master",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP GET product_alias_dictionary": {
+      "main": [
+        [
+          {
+            "node": "Merge Product + Alias Master",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge Product + Alias Master": {
+      "main": [
+        [
+          {
+            "node": "Parser + ดูดสี + Resolve SKU",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parser + ดูดสี + Resolve SKU": {
+      "main": [
+        [
+          {
+            "node": "Router PASS / CHECK_PRODUCT / DISCOVERY",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Router PASS / CHECK_PRODUCT / DISCOVERY": {
+      "main": [
+        [
+          {
+            "node": "Prepare Supabase RPC Payload",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepare Supabase RPC Payload",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepare Supabase RPC Payload",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prepare Supabase RPC Payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Supabase RPC Payload": {
+      "main": [
+        [
+          {
+            "node": "HTTP POST Supabase RPC",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP POST Supabase RPC": {
+      "main": [
+        [
+          {
+            "node": "Format Telegram (ไม่สร้าง Display ใหม่)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Telegram (ไม่สร้าง Display ใหม่)": {
+      "main": [
+        [
+          {
+            "node": "Telegram Bot / ห้องงาน",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "thai-order-color-mapping-v1",
+  "meta": {
+    "templateCredsSetupCompleted": false
+  },
+  "tags": []
+}

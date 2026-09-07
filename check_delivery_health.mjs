@@ -1,0 +1,17 @@
+import mysql from 'mysql2/promise';
+const base = process.env.SUPABASE_URL?.replace(/\/$/, '');
+const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+if (!base || !key) throw new Error('Supabase credentials unavailable');
+const pageUrl = new URL(`${base}/rest/v1/chat_page_messages`);
+pageUrl.searchParams.set('select', 'id,source_message_id,page_id,conversation_key,occurred_at,synced_at');
+pageUrl.searchParams.set('order', 'synced_at.desc');
+pageUrl.searchParams.set('limit', '20');
+const response = await fetch(pageUrl, { headers: { apikey: key, Authorization: `Bearer ${key}` } });
+if (!response.ok) throw new Error(`chat_page_messages HTTP ${response.status}`);
+const rows = await response.json();
+const db = await mysql.createConnection(process.env.DATABASE_URL);
+const [logs] = await db.query('select id, action, entityId, pageId, threadId, createdAt, metadataJson from audit_logs where action in (?, ?) order by createdAt desc limit 50', ['message_send_failed', 'message_sent']);
+await db.end();
+const failed = logs.filter(row => row.action === 'message_send_failed');
+const sent = logs.filter(row => row.action === 'message_sent');
+console.log(JSON.stringify({ chatPageRowsChecked: rows.length, latestPageSync: rows[0]?.synced_at ?? null, failedAuditCount: failed.length, sentAuditCount: sent.length, failedAudit: failed.map(row => ({ id: row.id, pageId: row.pageId, threadId: row.threadId, createdAt: row.createdAt, metadataJson: row.metadataJson })) }, null, 2));
